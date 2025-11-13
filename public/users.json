@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "김영남",
+        "password":"0000",
+        "age": 45,
+        "email": "youngnam@example.com",
+        "job": "웹 개발자",
+        "address": {
+            "city": "서울",
+            "district": "강남구",
+            "detail": "테헤란로 123"
+        },
+        "contact": "010-1234-5678",
+        "interests": [
+            "Java",
+            "Spring Boot",
+            "Vue.js",
+            "주식 투자"
+        ],
+        "joinedDate": "2023-05-29",
+        "lastLogin": "2025-08-25T09:30:00"
+    },
+    {
+        "id": 2,
+        "name": "김철수",
+        "password":"0000",
+        "age": 32,
+        "email": "jimin@example.com",
+        "job": "프론트엔드 개발자",
+        "address": {
+            "city": "부산",
+            "district": "해운대구",
+            "detail": "해운대로 456"
+        },
+        "contact": "010-2345-6789",
+        "interests": [
+            "React",
+            "JavaScript",
+            "UI/UX"
+        ],
+        "joinedDate": "2024-01-15",
+        "lastLogin": "2025-08-24T18:45:00"
+    },
+    {
+        "id": 3,
+        "name": "김영희",
+        "password":"0000",
+        "age": 28,
+        "email": "seoyeon@example.com",
+        "job": "데이터 분석가",
+        "address": {
+            "city": "대전",
+            "district": "유성구",
+            "detail": "대학로 789"
+        },
+        "contact": "010-3456-7890",
+        "interests": [
+            "Python",
+            "데이터 시각화",
+            "머신러닝"
+        ],
+        "joinedDate": "2024-03-22",
+        "lastLogin": "2025-08-25T12:15:00"
+    },
+    {
+        "id": 4,
+        "name": "우진",
+        "password":"0000",
+        "age": 35,
+        "email": "hyunwoo.c@example.com",
+        "job": "백엔드 개발자",
+        "address": {
+            "city": "인천",
+            "district": "연수구",
+            "detail": "송도동 100번지"
+        },
+        "contact": "010-4567-8901",
+        "interests": [
+            "Node.js",
+            "데이터베이스",
+            "클라우드"
+        ],
+        "joinedDate": "2023-11-01",
+        "lastLogin": "2025-08-25T10:00:00"
+    }
+]

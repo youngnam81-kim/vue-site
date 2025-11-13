@@ -1,0 +1,47 @@
+[
+    {
+        "orderId": "ORD-20250610-001",
+        "userId": 1,
+        "orderDateTime": "2025-06-10T14:30:00",
+        "paymentMethod": "신용카드",
+        "deliveryStatus": "배송완료",
+        "shippingAddress": {
+            "recipient": "김영남",
+            "contact": "010-1234-5678",
+            "addressDetail": "서울시 강남구 테헤란로 123, 456호"
+        },
+        "orderedItems": [
+            {
+                "productId": 101,
+                "quantity": 1,
+                "itemPrice": 1850000
+            },
+            {
+                "productId": 102,
+                "quantity": 2,
+                "itemPrice": 45000
+            }
+        ],
+        "totalAmount": 1940000
+    },
+    {
+        "orderId": "ORD-20250715-002",
+        "userId": 2,
+        "orderDateTime": "2025-07-15T10:15:00",
+        "paymentMethod": "무통장입금",
+        "deliveryStatus": "배송중",
+        "shippingAddress": {
+            "recipient": "이지민",
+            "contact": "010-2345-6789",
+            "addressDetail": "부산시 해운대구 해운대로 456, 789호"
+        },
+        "orderedItems": [
+            {
+                "productId": 102,
+                "quantity": 1,
+                "itemPrice": 45000
+            }
+        ],
+        "totalAmount": 45000
+    }
+]
