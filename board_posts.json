@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "title": "https://fontawesome.com/icons",
+        "category": "notice",
+        "author": "관리자",
+        "content": "아이콘 사용 URL https://fontawesome.com/icons",
+        "postDate": "2025-08-28",
+        "views": 1
+    },
+    {
+        "id": 1,
+        "title": "8월 시스템 점검 안내",
+        "category": "notice",
+        "author": "관리자",
+        "content": "안녕하세요. 8월 30일 오전 2시부터 4시까지 시스템 점검이 있을 예정입니다. 이용에 참고 부탁드립니다.",
+        "postDate": "2025-08-20",
+        "views": 150
+    },
+    {
+        "id": 2,
+        "title": "Vue.js 프로젝트 질문 드립니다.",
+        "category": "free",
+        "author": "김개발",
+        "content": "Vue 3에서 Composition API를 사용하는데 어려움이 있습니다. 좋은 튜토리얼이 있을까요?",
+        "postDate": "2025-08-22",
+        "views": 80
+    },
+    {
+        "id": 3,
+        "title": "주말에 React 스터디 하실 분?",
+        "category": "community",
+        "author": "이코더",
+        "content": "이번 주말에 React 스터디 모집합니다. 왕초보 환영합니다. 함께 성장해요!",
+        "postDate": "2025-08-24",
+        "views": 120
+    }
+]

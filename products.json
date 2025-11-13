@@ -1,0 +1,71 @@
+[
+    {
+        "productId": 101,
+        "productName": "프리미엄 개발자 노트북",
+        "price": 1850000,
+        "category": "전자기기",
+        "stock": 15,
+        "rating": 4.8,
+        "details": {
+            "brand": "테크노",
+            "releaseDate": "2025-01-10",
+            "specs": {
+                "CPU": "인텔 i9 13세대",
+                "RAM": "32GB",
+                "storage": "1TB SSD",
+                "graphics": "RTX 4070"
+            }
+        },
+        "reviews": [
+            {
+                "userId": 1,
+                "rating": 5,
+                "comment": "개발 작업이 정말 빨라졌어요. 추천합니다!",
+                "reviewDate": "2025-05-20"
+            },
+            {
+                "userId": 3,
+                "rating": 4.5,
+                "comment": "데이터 처리 속도가 매우 좋습니다.",
+                "reviewDate": "2025-06-15"
+            }
+        ]
+    },
+    {
+        "productId": 102,
+        "productName": "인공지능 프로그래밍 책",
+        "price": 45000,
+        "category": "도서",
+        "stock": 42,
+        "rating": 4.6,
+        "details": {
+            "author": "정민우",
+            "publisher": "코딩하우스",
+            "publicationDate": "2024-11-05",
+            "pages": 520
+        },
+        "reviews": [
+            {
+                "userId": 2,
+                "rating": 5,
+                "comment": "초보자도 쉽게 이해할 수 있게 설명이 잘 되어 있어요.",
+                "reviewDate": "2025-02-10"
+            }
+        ]
+    },
+    {
+        "productId": 103,
+        "productName": "개발자용 스탠딩 데스크",
+        "price": 750000,
+        "category": "가구",
+        "stock": 8,
+        "rating": 4.7,
+        "details": {
+            "brand": "에르고데스크",
+            "color": "월넛",
+            "size": "160x80cm",
+            "heightAdjust": "전동식"
+        },
+        "reviews": []
+    }
+]
