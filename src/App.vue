@@ -1,46 +1,98 @@
 <script setup>
-import './css/App.css'
-import RowLayout from './layouts/RowLayout.vue';
-import ColLayout from './layouts/ColLayout.vue';
-import MultipleLayout from './layouts/MultipleLayout.vue';
+import { RouterLink, RouterView } from 'vue-router'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import SideMenu from './components/SideMenu.vue';
+import HomeSideContents from './components/home/HomeSideContents.vue'
 
+//modal
+import Modal from './components/Modal.vue';
+import { provide, ref } from 'vue';
+
+const isModalVisible = ref(false);
+const modalId = ref(null);
+const modalTitle = ref('전역 모달입니다!');
+const modalMessage = ref('어떤 컴포넌트에서든 열 수 있어요.');
+
+const openModal = (options) => {
+  if (options?.id) modalId.value = options.id
+  if (options?.title) modalTitle.value = options.title
+  if (options?.message) modalMessage.value = options.message
+  isModalVisible.value = true
+}
+
+const closeModal = () => {
+  isModalVisible.value = false;
+}
+
+provide('modal', {
+  open: openModal,
+  close: closeModal
+})
 </script>
 
 <template>
-  <div class="content-wrapper border-no"> <!-- 새로운 div로 감싸고 클래스 추가 -->
-    <RowLayout></RowLayout>
-    <hr>
-    <!-- <ColLayout></ColLayout> -->
-    <hr>
-    <!-- <MultipleLayout></MultipleLayout> -->
+  <Header></Header>
+  <div class="center">
+    <SideMenu class="side-menu"></SideMenu>
+    <router-view class="router-view" />
+    <HomeSideContents class="side-contents"></HomeSideContents>
+    <Modal v-if="isModalVisible" :id="modalId" :title="modalTitle" :message="modalMessage" @close="closeModal" />
   </div>
+  <Footer class="footer"></Footer>
 </template>
 
 <style lang="scss" scoped>
-.content-wrapper {
+.center {
   display: flex;
-  /* Flexbox 활성화 */
-  flex-direction: column;
-  /* 자식 요소들을 세로로 정렬 (RowLayout, hr, ColLayout) */
-  align-items: center;
-  /* 세로 정렬 시, 자식 요소들을 수평 중앙으로 정렬 */
-
-  /* 이 컴포넌트 자체가 부모 컨테이너 내에서 가운데 정렬되기를 원한다면 */
-  /* width나 max-width를 지정하고 margin: 0 auto;를 추가하세요. */
-  /* 예: */
-  /* width: 100%; */
-  /* max-width: 1300px; */
-  /* margin: 0 auto; */
+  justify-content: left;
+  margin: 10px auto;
+  padding: 0px;
+  border: 0px solid rgb(136, 23, 23);
 }
 
-hr {
+.side-menu {
+  width: 200px;
+  // border: 10px solid rgb(136, 23, 23);
+}
+
+.side-contents {
+  width: 290px;
+}
+.router-view {
+  margin-left: 210px;
   width: 100%;
-  /* 부모(.content-wrapper) 너비에 맞춰 확장 */
-  border: none;
-  /* 기본 테두리 제거 */
-  border-top: 1px solid #eee;
-  /* 얇은 가로줄 추가 */
-  margin: 20px 0;
-  /* 위아래 여백 조정 */
+  min-height: 650px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.footer {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+  margin: 10px;
+  padding: 0px;
+  border: 0px solid rgb(136, 23, 23);
+}
+
+@media screen and (max-width: 800px) {
+  .side-menu {
+    display: none;
+  }
+
+  .router-view {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+    border: 0px solid rgb(136, 23, 23);
+  }
 }
 </style>

@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE, Edge */
+}
+
+html {
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+button {
+  background-color: white;
+  /* 배경을 흰색으로 */
+  color: #333;
+  /* 글자색 (대비되도록 어두운 색이 좋아요) */
+  border: 1px solid #ccc;
+  /* 옅은 회색 테두리 */
+  padding: 5px 10px;
+  /* 내부 여백 */
+  border-radius: 5px;
+  /* 모서리 둥글게 (원하는 값으로 조정) */
+  cursor: pointer;
+  /* 마우스 오버 시 손가락 모양 */
+  transition: background-color 0.3s ease;
+  /* 부드러운 호버 효과 */
+}
+
+/* 마우스 오버(hover) 시 스타일 (영남님께서 말씀하신 연회색 효과!) */
+button:hover {
+  background-color: #dadada;
+  /* 마우스 오버 시 연한 회색 */
+  border-color: #aaa;
+  /* 테두리색도 살짝 진하게 */
+  border-radius: 5px;
+}
+
+/* 활성화(active) 시 스타일 */
+button:active {
+  background-color: #e0e0e0;
+  border-color: #999;
+}
+
+input,
+textarea,
+select {
+  border-radius: 6px;
+  /* 원하는 값으로 조정 */
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+}
+
+/* 카드 형태나 섹션 같은 블록 요소에 둥근 모서리와 그림자 효과 주기 */
+.card,
+.section-container {
+  background-color: #fff;
+  border-radius: 10px;
+  /* 더 눈에 띄게 둥글게 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* 부드러운 그림자 효과 */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* 이미지 모서리 둥글게 */
+img {
+  border-radius: 5px;
+  /* 이미지도 부드럽게 */
+}
+
+div {
+  border: 1px solid rgb(206, 206, 206);
+  background-color: #fff;
+  border-radius: 5px;
+  /* 더 눈에 띄게 둥글게 */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  /* 부드러운 그림자 효과 */
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.border-no {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.float-left {
+  float: left;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.float-right {
+  float: right;
+}
+
+h2 {
+  color: rgb(80, 80, 80);
+}
+
+input[type="checkbox"] {
+  accent-color: #919191;
+  /* 원하는 색상 */
+}
+
+.text-center {
+  text-align: center;
+}
